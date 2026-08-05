@@ -13,8 +13,8 @@ int main(void) {
 
 	while (1) {
 		GPIOC_ODR &= ~(1 << 13);
-		delay(500000);
+		delay(100000);
 		GPIOC_ODR |= (1 << 13);
-		delay(500000);
+		delay(100000);
 	}
 }
