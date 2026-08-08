@@ -6,7 +6,7 @@ SRC_DIR = src
 INC_DIR = inc
 BUILD_DIR = build
 
-CFLAGS = -c -mcpu=cortex-m3 -mthumb  -O0 -g -Wall -Wextra -std=gnu11 -I$(INC_DIR)
+CFLAGS = -c -mcpu=cortex-m3 -mthumb  -O0 -g -Wall -Wextra -std=gnu11 -I$(INC_DIR) -DSTM32F103xB
 LDFLAGS = -mcpu=cortex-m3 -mthumb -T stm32f103c8t6.ld -nostdlib -Wl,-Map=$(BUILD_DIR)/main.map
 
 # Source and object files
